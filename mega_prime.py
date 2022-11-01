@@ -1,21 +1,17 @@
 n=int(input())
+s=str(n)
 is_prime=True
-temp=str(n)
 for i in range(2,int(n**0.5)+1):
     if n%i==0:
         is_prime=False
 if is_prime==True:
-    cnt1=1
+    all_prime=True
     while n>0:
-        cnt=0
         r=n%10
-        for j in range(1,r+1):
-            if n%j==0:
-                cnt+=1
-        if cnt==2:
-            cnt1+=1
+        if r!=2 and r!=3 and r!=5 and r!=7:
+            all_prime=False
         n=n//10
-    if cnt1==len(temp):
+    if is_prime and all_prime:
         print('Mega Prime')
     else:
         print('Not Mega Prime')
