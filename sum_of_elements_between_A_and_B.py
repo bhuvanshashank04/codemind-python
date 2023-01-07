@@ -1,0 +1,8 @@
+t=int(input())
+lst=list(map(int,input().split()))
+a,b=map(int,input().split())
+s=0
+for i in range(t):
+    if lst[i]>=a and lst[i]<=b:
+        s+=lst[i]
+print(s)
