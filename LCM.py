@@ -1,12 +1,8 @@
 a,b=map(int,input().split())
-mul=a*b
-while a!=0 and b!=0:
-    if a>b:
-        a%=b
-    else:
-        b%=a
-if a==0:
-    lcm=mul//b
-else:
-    lcm=mul//a
-print(lcm)
+mx=a if a>b else b
+i=mx
+while True:
+    if i%a==0 and i%b==0:
+        print(i)
+        break
+    i+=mx
