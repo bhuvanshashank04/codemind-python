@@ -1,6 +1,5 @@
 n=int(input())
-n1=n
-temp=n
+n1=temp=n
 cnt=0
 for i in range(1,n+1):
     if n%i==0:
@@ -28,7 +27,7 @@ else:
             p2=n1
             break
         n1-=1
-    if p1-temp<temp-p2:
-        print(abs(p1-temp))
+    if abs(temp-p1)<abs(temp-p2):
+        print(abs(temp-p1))
     else:
-        print(abs(p2-temp))
+        print(abs(temp-p2))
