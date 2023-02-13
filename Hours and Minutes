@@ -1,0 +1,4 @@
+t=int(input())
+h=t//60
+m=t%60
+print('{} Hour(s) {} Minute(s)'.format(h,m))
