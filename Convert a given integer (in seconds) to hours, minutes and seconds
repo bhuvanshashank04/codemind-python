@@ -1,0 +1,5 @@
+t=int(input())
+h=(t//60)//60
+m=(t//60)%60
+s=(t%60)%60
+print('H:M:S-{}:{}:{}'.format(h,m,s))
