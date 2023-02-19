@@ -1,0 +1,3 @@
+b=int(input())
+h=int(input())
+print(int(h*b*0.5))
