@@ -1,0 +1,7 @@
+n=input()
+if ord(n)>=65 and ord(n)<=90:
+    print('uppercase alphabet')
+elif ord(n)>=97 and ord(n)<=122:
+    print('lowercase alphabet')
+else:
+    print('not an alphabet')
