@@ -1,0 +1,11 @@
+n=int(input())
+if n<=10000:
+    da=0.8*n
+    hra=0.2*n
+elif n<=20000:
+    da=0.9*n
+    hra=0.25*n
+elif n>20000:
+    da=0.95*n 
+    hra=0.3*n
+print('{:.2f}'.format(n+da+hra))
