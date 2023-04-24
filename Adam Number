@@ -1,0 +1,12 @@
+n=int(input())
+sq=n**2
+sq=str(sq)
+n=str(n)
+n=n[::-1]
+n=int(n)
+n=n**2
+n=str(n)
+if n==sq[::-1]:
+    print(True)
+else:
+    print(False)
