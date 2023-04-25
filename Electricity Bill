@@ -1,0 +1,25 @@
+n=int(input())
+print('Units Consumed: {}'.format(n))
+su=0
+if n<=199:
+    am=n*1.20
+    print('Cost per Unit: 1.20')
+elif n<400:
+    am=n*1.40
+    print('Cost per Unit: 1.40')
+elif n<600:
+    am=n*1.60
+    print('Cost per Unit: 1.60')
+elif n<800:
+    am=n*1.80
+    print('Cost per Unit: 1.80')
+elif n>=800:
+    am=n*2.00
+    print('Cost per Unit: 2.00')
+print('Bill: {:.2f}'.format(am))
+if am>400:
+    su=0.15*am
+    print('Surcharge: {:.2f}'.format(su))
+else:
+    print('Surcharge: 0.00')
+print('Total Amount: {:.2f}'.format(am+su))
