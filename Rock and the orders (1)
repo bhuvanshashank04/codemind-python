@@ -1,0 +1,17 @@
+d,c=map(int,input().split())
+a1,a2,a3=map(int,input().split())
+b1,b2,b3=map(int,input().split())
+a=a1+a2+a3
+b=b1+b2+b3
+if a>=150 and b>=150:
+    if a+b+c<a+b+d+d:
+        print('YES')
+    else:
+        print('NO')
+elif a<150 and b<150:
+    print('NO')
+elif a<150 or b<150:
+    if a+b+c+d<a+b+d+d:
+        print('YES')
+    else:
+        print('NO')
