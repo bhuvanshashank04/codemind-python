@@ -1,0 +1,6 @@
+n=int(input())
+c=n/4
+if int(c)<c:
+    print(n//4+1)
+else:
+    print(n//4)
