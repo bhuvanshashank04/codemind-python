@@ -1,0 +1,17 @@
+a,b,c=map(int,input().split())
+mx=max(a,b,c)
+if mx==a:
+    if b>c:
+        print(b+a)
+    else:
+        print(c+a)
+elif mx==b:
+    if a>c:
+        print(b+a)
+    else:
+        print(c+b)
+elif mx==c:
+    if a>b:
+        print(a+c)
+    else:
+        print(b+c)
