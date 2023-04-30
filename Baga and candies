@@ -1,0 +1,6 @@
+n,k,m=map(int,input().split())
+no=k*m
+if n/no>int(n/no):
+    print(n//no+1)
+else:
+    print(n//no)
