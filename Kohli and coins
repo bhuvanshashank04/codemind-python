@@ -1,0 +1,8 @@
+x=int(input())
+if x%5==0:
+    ten=x//10
+    x=x%10
+    five=x//5
+    print(ten+five)
+else:
+    print('-1')
