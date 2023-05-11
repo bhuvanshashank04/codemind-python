@@ -1,0 +1,9 @@
+n=input()
+s=set(n)
+lst=[]
+for i in s:
+    lst.append(i)
+if len(n)==len(lst):
+    print('Unique Number')
+else:
+    print('Not Unique Number')
