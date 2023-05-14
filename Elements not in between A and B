@@ -1,0 +1,12 @@
+t=int(input())
+lst=list(map(int,input().split()))
+a,b=map(int,input().split())
+cnt=0
+for i in range(t):
+    if lst[i]>=a and lst[i]<=b:
+        pass
+    else:
+        print(lst[i],end=' ')
+        cnt=1
+if cnt==0:
+    print('-1')
