@@ -1,0 +1,9 @@
+t=int(input())
+a=list(map(int,input().split()))
+if t%2!=0:
+    for i in range(t):
+        print(a[i],end=' ')
+    print('0',end=' ')
+else:
+    for i in range(t):
+        print(a[i],end=' ')
