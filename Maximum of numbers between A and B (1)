@@ -1,0 +1,11 @@
+t=int(input())
+lst=list(map(int,input().split()))
+a,b=map(int,input().split())
+ls=[]
+for i in range(t):
+    if lst[i]>=a and lst[i]<=b:
+        ls.append(lst[i])
+if ls==[]:
+    print('-1')
+else:
+    print(max(ls))
