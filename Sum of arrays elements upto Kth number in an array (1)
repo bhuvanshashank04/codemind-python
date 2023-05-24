@@ -1,0 +1,11 @@
+t=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+s=0
+for i in range(t):
+    if a[i]==k:
+        s+=a[i]
+        break
+    else:
+        s+=a[i]
+print(s)
