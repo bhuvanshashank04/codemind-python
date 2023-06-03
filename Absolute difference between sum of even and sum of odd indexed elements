@@ -1,0 +1,10 @@
+t=int(input())
+a=list(map(int,input().split()))
+od=0
+ev=a[0]
+for i in range(1,t):
+    if i%2!=0:
+        od+=a[i]
+    elif i%2==0:
+        ev+=a[i]
+print(abs(ev-od))
