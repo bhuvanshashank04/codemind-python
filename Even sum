@@ -1,0 +1,7 @@
+t=int(input())
+a=list(map(int,input().split()))
+lst=[]
+for i in range(t):
+    if a[i]%2==0:
+        lst.append(a[i])
+print(sum(lst))
