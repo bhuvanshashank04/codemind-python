@@ -1,0 +1,22 @@
+t=int(input())
+a=list(map(int,input().split()))
+ls=[]
+lst=['0']
+cnt1=0
+for i in range(t):
+    cnt=0
+    for j in range(t):
+        if a[i]==a[j]:
+            cnt+=1
+    if cnt==a[i]:
+        ls.append(a[i])
+        cnt1=1
+for i in range(len(ls)):
+    cn=0
+    for j in range(len(lst)):
+        if ls[i]==lst[j]:
+            cn=1
+            continue
+    if cn==0:
+        lst.append(ls[i])
+print(len(lst)-1)
