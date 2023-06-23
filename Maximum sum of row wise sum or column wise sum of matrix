@@ -1,0 +1,7 @@
+n,m=map(int,input().split())
+ls=[]
+for i in range(n):
+    a=list(map(int,input().split()))
+    s=sum(a)
+    ls.append(s)
+print(max(ls))
