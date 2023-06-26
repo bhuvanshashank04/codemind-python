@@ -1,0 +1,8 @@
+t=int(input())
+a=list(map(int,input().split()))
+s=n=0
+ls=[]
+for i in range(t-1,-1,-1):
+    s+=a[i]*(2**n)
+    n+=1
+print(s)
