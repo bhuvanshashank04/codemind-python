@@ -1,0 +1,13 @@
+t=int(input())
+a=list(map(int,input().split()))
+mi=min(a)
+mi=str(mi)
+l=len(mi)
+cnt=0
+for i in range(t):
+    ls=a[i]
+    ls=str(ls)
+    le=len(ls)
+    if le==l:
+        cnt+=1
+print(cnt)
