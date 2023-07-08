@@ -1,0 +1,17 @@
+import math
+def prime(n):
+    pr=True
+    if n==1: return False
+    for i in range(2,int(math.sqrt(n))+1):
+        if n%i==0:
+            pr=False
+            break
+    if pr==True:
+        return True
+m=int(input())
+n=int(input())
+cnt=0
+for j in range(m,n+1):
+    if prime(j)==True:
+        cnt+=1
+print(cnt)
