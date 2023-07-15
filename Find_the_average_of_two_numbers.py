@@ -1,2 +1,2 @@
-n,m=map(int,input().split())
-print('{:.4f}'.format((n+m)/2))
+a,b=map(int,input().split())
+print('{:.4f}'.format((a+b)/2))
