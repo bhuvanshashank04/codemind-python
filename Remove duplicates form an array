@@ -1,0 +1,6 @@
+t=int(input())
+a=list(map(int,input().split()))
+s=set(a)
+s=sorted(s)
+for i in s:
+    print(i,end=' ')
