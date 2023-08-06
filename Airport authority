@@ -1,0 +1,13 @@
+n=int(input())
+lst=[]
+s=0
+for _ in range(n):
+    ls=int(input())
+    lst.append(ls)
+t=int(input())
+for i in range(len(lst)):
+    if lst[i]<=t:
+        s+=1
+    elif lst[i]>t:
+        s+=2
+print(s)
