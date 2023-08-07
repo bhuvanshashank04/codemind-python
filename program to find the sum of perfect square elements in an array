@@ -1,0 +1,11 @@
+def ps(i):
+    r=i**0.5
+    if r==int(r):
+        return True
+t=int(input())
+s=0
+l=list(map(int,input().split()))
+for i in range(t):
+    if ps(l[i])==True:
+        s+=l[i]
+print(s)
