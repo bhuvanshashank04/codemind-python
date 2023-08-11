@@ -1,0 +1,14 @@
+s=input()
+l=['a','e','i','o','u']
+em=[]
+for i in s:
+    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U':
+        em.append(i)
+em=set(em)
+for i in em:
+    l.remove(i)
+if len(l)==0:
+    print('0')
+else:
+    for i in range(len(l)):
+        print(l[i],end=' ')
