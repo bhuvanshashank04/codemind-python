@@ -1,0 +1,6 @@
+n=input()
+cnt=0
+for i in n:
+    if i.isupper():
+        cnt+=1
+print(cnt)
