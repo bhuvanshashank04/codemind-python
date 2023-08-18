@@ -1,0 +1,21 @@
+def pali(n):
+    s=str()
+    for i in n:
+        s+=i
+    s=s.lower()
+    if s==s[::-1]:
+        return True
+n=input()
+lst=[]
+cnt=0
+for i in n:
+    if i==' ':
+        if pali(lst)==True:
+            cnt+=1
+        del(lst)
+        lst=[]
+    else:
+        lst.append(i)
+if pali(lst)==True:
+    cnt+=1
+print(cnt)
