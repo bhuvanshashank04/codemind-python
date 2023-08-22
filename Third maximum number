@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+a=set(a)
+if len(a)>=3:
+    mx=max(a)
+    a.remove(mx)
+    mx=max(a)
+    a.remove(mx)
+    print(max(a))
+else:
+    print(max(a))
