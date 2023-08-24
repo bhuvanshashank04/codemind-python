@@ -1,0 +1,8 @@
+n=int(input())
+a=list(map(int,input().split()))
+ls=[]
+for i in range(n):
+    ls.append(abs(a[i]))
+ls.sort()
+for i in range(n):
+    print(ls[i]**2,end=' ')
