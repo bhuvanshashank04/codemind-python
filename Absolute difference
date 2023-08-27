@@ -1,0 +1,17 @@
+def prime(n):
+    is_prime=True
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            is_prime=False
+    if is_prime==True:
+        return True
+n=int(input())
+a=list(map(int,input().split()))
+p=1
+np=1
+for i in range(n):
+    if prime(a[i])==True:
+        p*=a[i]
+    else:
+        np*=a[i]
+print(abs(p-np))
