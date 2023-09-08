@@ -1,0 +1,7 @@
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+for i in range(c):
+    b.insert(0,b[-1])
+    b.pop()
+print(*b)
