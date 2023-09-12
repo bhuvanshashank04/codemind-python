@@ -1,0 +1,10 @@
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+d=0
+e=0
+for i in range(len(a)):
+    if a[i]>b[i]:
+        d=d+1
+    if a[i]<b[i]:
+        e=e+1
+print(d,e)
