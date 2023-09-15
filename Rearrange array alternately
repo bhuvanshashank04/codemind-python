@@ -1,0 +1,12 @@
+a=int(input())
+for i in range(a):
+    b=int(input())
+    c=list(map(int,input().split()))
+    d=[]
+    c.insert(0,0)
+    for i in range(1,(b//2)+1):
+        d.append(c[-i])
+        d.append(c[i])
+    if b%2!=0:
+        d.append(c[(b//2)+1])
+    print(*d)
