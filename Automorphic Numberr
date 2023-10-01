@@ -1,0 +1,19 @@
+n=int(input())
+sq=n**2
+rev=cnt=0
+t=str(n)
+l=len(t)
+while True:
+    r=sq%10
+    rev=rev*10+r
+    cnt+=1
+    if cnt==l:
+        break
+    sq=sq//10
+rev=str(rev)
+re=rev[::-1]
+re=int(re)
+if re==n:
+    print('Automorphic Number')
+else:
+    print('Not an Automorphic Number')
